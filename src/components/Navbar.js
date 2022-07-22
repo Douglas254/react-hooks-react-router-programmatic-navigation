@@ -14,7 +14,10 @@ function Navbar({ setIsLoggedIn }) {
   const history = useHistory();
 
   function handleLogout() {
+    // logout the user
     setIsLoggedIn(false);
+
+    // then navigate them to the login page
     history.push("/login");
   }
 
